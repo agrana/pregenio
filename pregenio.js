@@ -2,9 +2,9 @@
 const fs = require('fs');
 const fetch = require('node-fetch');
 const readline = require('readline');
-const rfile = '/Users/alfonso/Desktop/lists/recom_final.txt';
+const rfile = process.argv[2];
 const promiseLimit = require('promise-limit');
-var limit = promiseLimit(10)
+var limit = promiseLimit(process.argv[3])
 
 var lineReader = readline.createInterface({
     input: fs.createReadStream(rfile)
