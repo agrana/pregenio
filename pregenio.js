@@ -6,22 +6,21 @@ const promiseLimit = require('promise-limit');
 //
 const rfile = process.argv[2];
 var limit = promiseLimit(process.argv[3])
-
+//
 var lineReader = readline.createInterface({
     input: fs.createReadStream(rfile)
 });
-
+//
 lineReader.on('line', async function (line) {
         try {
-
             const toget = await limit(() => console.log(line));
             const response = await limit(() => fetch(line));
-            const json = await response.status;
+            const stat = await response.status;
             console.log(
-                toget
+                toget    
             );
             console.log(
-                response.status
+                stat
             );
         } catch (error) {
             console.log(error);
