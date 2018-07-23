@@ -9,5 +9,7 @@ Dependencies:
 
 node pregenio.js file limit
 
-- File a accesible file with urls to fetch one per line. 
-- Limit amount of outstanding promises to allow inflight
+were: 
+
+- file  is a accesible file with urls to fetch one per line. 
+- limit integer amount of outstanding promises to allow inflight
