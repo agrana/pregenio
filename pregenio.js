@@ -2,8 +2,9 @@
 const fs = require('fs');
 const fetch = require('node-fetch');
 const readline = require('readline');
-const rfile = process.argv[2];
 const promiseLimit = require('promise-limit');
+//
+const rfile = process.argv[2];
 var limit = promiseLimit(process.argv[3])
 
 var lineReader = readline.createInterface({
@@ -11,7 +12,6 @@ var lineReader = readline.createInterface({
 });
 
 lineReader.on('line', async function (line) {
-    //return limit;
         try {
 
             const toget = await limit(() => console.log(line));
