@@ -7,9 +7,9 @@ Dependencies:
 - npm install readline
 - npm install promise-limit
 
+Running it:
 
-`nnode pregenio.js file limit`
-
+`node pregenio.js file limit`
 
 were: 
 
