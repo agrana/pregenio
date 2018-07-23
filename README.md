@@ -2,14 +2,14 @@
 Async url fetcher with limits. 
 
 Dependencies:
-`
+
 - npm install node-fetch
 - npm install readline
 - npm install promise-limit
-`
-`
-node pregenio.js file limit
-`
+
+
+`nnode pregenio.js file limit`
+
 
 were: 
 
