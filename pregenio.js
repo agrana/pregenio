@@ -13,16 +13,14 @@ var lineReader = readline.createInterface({
 //
 lineReader.on('line', async function (line) {
         try {
-            const toget = await limit(() => console.log(line));
             const response = await limit(() => fetch(line));
+            const type = await response.headers.get('content-type');
             const stat = await response.status;
+            const length = await response.headers.get('content-length');
             console.log(
-                toget    
-            );
-            console.log(
-                stat
+                stat, type, Number(length), line 
             );
         } catch (error) {
             console.log(error);
         }
- }); 
+ });
