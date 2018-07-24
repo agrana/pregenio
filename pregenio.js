@@ -14,9 +14,7 @@ var lineReader = readline.createInterface({
 lineReader.on('line', async function (line) {
         try {
             const response = await limit(() => fetch(line));
-            const type = await response.headers.get('content-type');
-            const stat = await response.status;
-            const length = await response.headers.get('content-length');
+            let [type, stat, length] = await Promise.all([response.headers.get('content-type'), response.status, response.headers.get('content-length')]);
             console.log(
                 stat, type, Number(length), line 
             );
