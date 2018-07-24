@@ -11,7 +11,7 @@ Running it:
 
 `node pregenio.js file limit`
 
-were: 
+Where: 
 
 - file  is a accesible file with urls to fetch one per line. 
 - limit (integer) amount of outstanding promises to allow inflight
