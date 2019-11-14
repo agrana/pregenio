@@ -1,0 +1,19 @@
+{
+  "name": "pregenio",
+  "version": "0.0.1",
+  "description": "Url fetcher with limits",
+  "main": "pregenio.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agrana/pregenio.git"
+  },
+  "author": "alfonso.grana@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agrana/pregenio/issues"
+  },
+  "homepage": "https://github.com/agrana/pregenio#readme"
+}
