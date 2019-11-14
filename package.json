@@ -4,7 +4,7 @@
   "description": "Url fetcher with limits",
   "main": "pregenio.js",
   "scripts": {
-    "test": "./pregenio.js testfile 2"
+    "test": "node ./pregenio.js testfile 2"
   },
   "repository": {
     "type": "git",
