@@ -4,7 +4,7 @@
   "description": "Url fetcher with limits",
   "main": "pregenio.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "pregenio.js testfile 2"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/agrana/pregenio/issues"
   },
-  "homepage": "https://github.com/agrana/pregenio#readme"
+  "homepage": "https://github.com/agrana/pregenio#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.0",
+    "promise-limit": "^2.7.0"
+  }
 }
